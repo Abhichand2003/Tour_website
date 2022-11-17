@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toura</title>
+   
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <style>
+        .social{
+            margin: auto auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .fa {
+            justify-content: center;
+      padding: 20px;
+      font-size: 30px;
+      height: 70px;
+      width: 70px;
+      /* justify-content: center; */
+      /* align-items: center; */
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      /* background: #3B5998; */
+      background: #666;
+      color: white;
+    }
+    
+    .fa-twitter {
+      /* background: #55ACEE; */
+      background: #666;
+      color: white;
+    }
+    
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+    
+    .fa-linkedin {
+      /* background: #007bb5; */
+      background: #666;
+      color: white;
+    }
+    
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+    
+    .fa-instagram {
+      /* background: #125688; */
+      background:#666;
+      color: white;
+    }
+    
+    .fa-pinterest {
+      background: #cb2027;
+      color: white;
+    }
+    
+    .fa-snapchat-ghost {
+      background: #fffc00;
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    
+    .fa-skype {
+      background: #00aff0;
+      color: white;
+    }
+    
+    .fa-android {
+      background: #a4c639;
+      color: white;
+    }
+    
+    .fa-dribbble {
+      background: #ea4c89;
+      color: white;
+    }
+    
+    .fa-vimeo {
+      background: #45bbff;
+      color: white;
+    }
+    
+    .fa-tumblr {
+      background: #2c4762;
+      color: white;
+    }
+    
+    .fa-vine {
+      background: #00b489;
+      color: white;
+    }
+    
+    .fa-foursquare {
+      background: #45bbff;
+      color: white;
+    }
+    
+    .fa-stumbleupon {
+      background: #eb4924;
+      color: white;
+    }
+    
+    .fa-flickr {
+      background: #f40083;
+      color: white;
+    }
+    
+    .fa-yahoo {
+      background: #430297;
+      color: white;
+    }
+    
+    .fa-soundcloud {
+      background: #ff5500;
+      color: white;
+    }
+    
+    .fa-reddit {
+      background: #ff5700;
+      color: white;
+    }
+    
+    .fa-rss {
+      background: #ff6600;
+      color: white;
+    }
+       </style>
+</head>
+<body>
+    <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+   <!-- <a href="#" class="logo"><span>T</span>o<span>U</span>r<span>A</span></a> -->
+   <img src="images/logo-1.png" alt="" width="70px" height="70px">
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="http://localhost/final/register_form.php">Book</a>
+        <a href="#packages">Packages</a>
+        <a href="about.html">About us</a>
+        
+        <!-- <a href="#gallery"></a> -->
+        <!-- <a href="#review">review</a> -->
+        <a href="http://localhost/final/contact_us.php">contact us</a>
+        <!-- <a href="http://localhost/login_sys/register_form.php">Login</a> -->
+
+    </nav>
+    <div class="icons">
+        <!-- <i class="fas fa-search" id="search-btn"></i> -->
+        <a href="http://localhost/final/register_form.php"> <i class="fas fa-user" id="login-btn"></i></a>
+        <a href="http://localhost/final/admin_panel.php"> <i class='fas fa-user-lock' id="login-btn"></i></a>
+    </div>
+    
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>pleasure 2 burn</h3>
+        <p>Feel Thy Destiny !</p>
+        <a href="#" class="btn">love O2O</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/desert.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/green.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <!-- <span class="vid-btn" data-src="images/vid-5.mp4"></span> -->
+    </div>
+
+    <div class="video-container">
+        <video src="images/desert.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/australia.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Australia </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to Australia!!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of Australia</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1799.00 <span>$1849.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="australia.html" class="btn">view details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/italy.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Italy </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to Italy !!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of Italy</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1999.00 <span>$2049.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="italy.html" class="btn">view details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/bali-2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Indonesia </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to indonesia!!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of indonesia</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1499.00 <span>$1549.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="indonesia.html" class="btn">view details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/france.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> France </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to France !!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of France</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1899.00 <span>$1999.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="france.html" class="btn">view details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/switzerland.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Switzerland </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to Switzerland !!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of Switzerland</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1649.00 <span>$1699.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="switzerland.html" class="btn">view details</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/uae.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> U.A.E </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to UAE !!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of UAE </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1549.00 <span>$1599.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="uae.html" class="btn">view details</a>
+            </div>
+        </div>
+
+    </div>
+    <h1 class="heading">
+        <span>m</span>
+        <span>o</span>
+        <span>s</span>
+        <span>t</span>
+        <span>l</span>
+        <span>i</span>
+        <span>k</span>
+        <span>e</span>
+        <span>d</span>
+        <!-- <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span> -->
+
+       
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/australia.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Australia </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to Australia!!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of Australia</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1799.00 <span>$1849.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="australia.html" class="btn">view details</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/switzerland.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Switzerland </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to Switzerland !!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of Switzerland</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1649.00 <span>$1699.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="switzerland.html" class="btn">view details</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/uae.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> UAE </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to UAE !!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of UAE </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1549.00 <span>$1599.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="uae.html" class="btn">view details</a>
+            </div>
+        </div>
+    </div>
+    <h1 class="heading">
+        <span>h</span>
+        <span>o</span>
+        <span>n</span>
+        <span>e</span>
+        <span>y</span>
+        <span>m</span>
+        <span>o</span>
+        <span>o</span>
+        <span>n</span>
+        <!-- <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span> -->
+
+       
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/france.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> France </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to France !!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of France</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1899.00 <span>$1999.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="france.html" class="btn">view details</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/italy.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Italy </h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to Italy !!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of Italy</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1999.00 <span>$2049.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="italy.html" class="btn">view details</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/bali-2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Indonesia</h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWelcome to indonesia!!<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCherish the wonders of indonesia</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $1499.00 <span>$1549.00</span> </div>
+                <!-- <a href="#" class="btn">book now</a> -->
+                <a href="indonesia.html" class="btn">view details</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="client-section">
+	<h1 class="heading">
+        <span>c</span>
+        <span>l</span>
+        <span>i</span>
+        <span>e</span>
+        <span>n</span>
+        <span>t</span>
+        <span>s</span>
+        <!-- <span>u</span>
+        <span>s</span> -->
+       
+    </h1>
+	<div id="clients">
+		<div class="client-item">
+			<img src="images/Foodpanda.png">
+		 </div>
+		 <div class="client-item">
+			<img src="images/Atom-1.png">
+		 </div>
+		 <div class="client-item">
+			<img src="images/ESPN-Plus.png">
+		 </div>
+
+		 <!-- <div class="client-item">
+			<img src="images/Maserati-1.png">
+		 </div> -->
+		<div class="client-item">
+			<img src="images/Warner-Bros-Pictures-01.png">
+		 </div>
+		 <div class="client-item">
+			<img src="images/Novolex.png">
+		 </div>
+	</div>
+</section>
+<!-- <section class="contact" id="contact">
+	
+<!-- <h1 class="h-primary center"> Contact Us</h1> -->
+<!-- <h1 class="heading">
+    <span>c</span>
+    <span>o</span>
+    <span>n</span>
+    <span>t</span>
+    <span>a</span>
+    <span>c</span>
+    <span>t</span>
+    <span>u</span>
+    <span>s</span>
+   
+</h1>
+<div class="contact-box">
+    <form action="">
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="text" placeholder="subject">
+        </div>
+        <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" class="btn" value="send message">
+    </form>
+
+	</div> -->
+<!-- </section> -->
+
+<!-- <div class="last">
+    <div class="social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <!-- <a href="#" class="fa fa-youtube"></a> -->
+        <!-- <a href="#" class="fa fa-instagram"></a> -->
+        <!-- <a href="#" class="fa fa-pinterest"></a> -->
+        <!-- <a href="#" class="fa fa-snapchat-ghost"></a> -->
+        <!-- <a href="#" class="fa fa-skype"></a> -->
+        <!-- <a href="#" class="fa fa-android"></a> -->
+        <!-- <a href="#" class="fa fa-dribbble"></a> -->
+        <!-- <a href="#" class="fa fa-vimeo"></a> -->
+        <!-- <a href="#" class="fa fa-tumblr"></a> -->
+        <!-- <a href="#" class="fa fa-vine"></a> -->
+        <!-- <a href="#" class="fa fa-foursquare"></a> -->
+        <!-- <a href="#" class="fa fa-stumbleupon"></a> -->
+        <!-- <a href="#" class="fa fa-flickr"></a> -->
+        <!-- <a href="#" class="fa fa-yahoo"></a> -->
+        <!-- <a href="#" class="fa fa-reddit"></a> -->
+        <!-- <a href="#" class="fa fa-rss"></a> -->
+    <!-- </div>
+    <!-- </section> -->
+    <!-- <div class="number">
+        <div class="difnumber">
+            
+            <p><i class="fa fa-phone" style="padding: 0px 0px;" ></i> customercare: 6309933763</p>
+           
+             <p><i class="fa fa-tty" style="padding: 0px 0px;" ></i>telephone: 040- 1234567</p>
+             <p><i class="material-icons">add_location</i>location: indore india </p>
+            </div>
+            <div class="difnumber">
+                <p> customercare: 6309933763</p>
+                 <p>telephone: 040- 1234567</p>
+                 <p>location: indore india </p>
+                </div>
+                <div class="difnumber">
+                    <p> customercare: 6309933763</p>
+                     <p>telephone: 040- 1234567</p>
+                     <p>location: indore india </p> -->
+                    <!-- </div>
+            -->
+           
+     <!-- </div>
+    
+    <div class="icons"> -->
+        <!-- <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a> -->
+    <!-- </div>
+</div>
+<footer>
+	<div class="center">
+		Copyrights &copy; www.Toura.com. All rights reserved!
+	</div>
+</footer> --> -->
+<!-- <section>Footer Example 4</section> -->
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+                <!-- <a href="#" class="logo"><span>T</span>o<span>U</span>r<span>A</span></a> -->
+                <img src="images/logo-1.png" alt="" width="70px" height="70px">
+
+                <p class="footer-company-name"> <br> developed by: <br> Vishal naik Dharavath <br> Abhichand Manchala <br> <br>
+                </p>
+
+				<!-- <p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="#">Blog</a>
+				
+					<a href="#">Pricing</a>
+				
+					<a href="#">About</a>
+					
+					<a href="#">Faq</a>
+					
+					<a href="#">Contact</a>
+				</p> -->
+
+				<p class="footer-company-name">Copyrights &copy; www.Toura.com. All rights reserved!</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Indian Institute of Technology Indore</span> Simrol,Madhya Pradesh</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+916309933763 <br>+918125914211</p>
+                    
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">cse210001014@iiti.ac.in <br>cse210001039@iiti.ac.in</a></p>
+                   
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+				Toura is a Tourism based website. Toura includes packages which are affordable. Toura is created by Vishal Naik Dharavath and Abhichand Manchala.
+                    Toura is user friendly and easily accessible.Any amendments for this website are invited !!
+                </p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/profile.php?id=100077840312584"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/AbhichandManch1"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/vishal-naik-dharavath-9b35a2236"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.instagram.com/mr_abc18/?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+    
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="signinstyles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+</head>
+
+<body>
+
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+
+			</div>
+			<span>sign-up using email-id</span>
+			<input type="text" placeholder="full name" />
+			<input type="email" placeholder="Email-address" />
+			<input type="password" placeholder="Password" />
+			<table>
+				<tr>
+					<td><input type="checkbox" name="remember"/></td>
+					<td>Remember me</td>
+				</tr>
+			</table>
+			<button>submit</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+
+			</div>
+			<span>account details</span>
+			<input type="email" placeholder="Email-address" />
+			<input type="password" placeholder="Password" />
+			<table>
+				<tr>
+					<td><input type="checkbox" name="remember"/></td>
+					<td>Remember me</td>
+				</tr>
+			</table>
+
+			<a href="https://en.wikipedia.org/wiki/Emma_(2020_film)" style="color:blue"> forgot password?</a>
+			<button>login</button>
+
+
+
+
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>already a user of footblizz sign-in here</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello there!
+				</h1>
+				<p>exicted to watch a engaging football match.
+					 sign up with us to enjoy the up-coming matches on field</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+</body>
+
+</html>
